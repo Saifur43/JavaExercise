@@ -19,11 +19,11 @@ public class TestATM {
 		System.out.println("Enter your account no: ");
 		int ac = sc.nextInt();
 		
-		int flag = 0;
-		int u = -1;
+		int flag = 0; 												//user validation flag
+		int u = -1;													//recording valid user
 		for(int i=0; i<5; i++){
 			if(ac == user[i].get_ac_no()){
-				flag = 1;
+				flag = 1;   										//valid user
 				u = i;
 			}
 		}
